@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary-dark: hsla(215, 20%, 25%, 1);
+  --primary-light: hsla(215, 20%, 90%, 1);
+  --secondary-dark: hsla(35, 20%, 25%, 1);
+  --secondary-light: hsla(35, 20%, 90%, 1);
+  --gray: hsla(0, 0%, 50%, 1);
+  --shadow: hsla(0, 0%, 0%, 0.25);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+body,
+div {
+  box-sizing: border-box; /* Makes sure that all elements has same box-sizing preference */
+  margin: 0; /* To avoid unwanted default margins */
+  padding: 0; /* To avoid unwanted default paddings */
+  font-size: 1.6rem;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  color: var(--primary-dark);
+  font-size: 2.4rem;
+  text-align: center;
+  -webkit-font-smoothing: antialiased; /* Makes the text look "smoother" */
+  -moz-osx-font-smoothing: grayscale; /* Makes the text look "smoother" in Firefox */
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5.6rem;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.8rem;
+  padding: 4.5rem;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.2rem;
+  padding: 4.5rem;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.8rem;
+  padding: 4.5rem;
+}
+
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 2.4rem;
+  padding: 0 4.5rem 4.5rem 4.5rem;
+}
+
+header {
+  background-color: var(--secondary-dark);
+  box-shadow: 0 -0.4rem 0.4rem var(--shadow) inset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 4.5rem;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.logo {
+  width: 32rem;
+}
+
+nav {
+  width: 60rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  color: var(--primary-light);
+  font-size: 2.2rem;
+  text-decoration-line: none;
+}
+
+nav a {
+  font-weight: 700;
+}
+
+nav a:hover {
+  text-decoration-line: underline;
+}
+
+main {
+  margin-top: 8.8rem;
+}
+
+section {
+  box-shadow: 0 -0.4rem 0.4rem var(--shadow) inset;
+  background-color: var(--secondary-light);
+}
+
+.hero-image {
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url("./assets/cavapoo.jpg");
+  box-shadow: 0 -0.4rem 0.4rem var(--shadow) inset;
+  height: 60rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-light);
+}
+
+button {
+  width: 54rem;
+  height: 7.2rem;
+  border-radius: 0.8rem;
+  border: solid 0.2rem var(--primary-dark);
+  box-shadow: 0 0.4rem 0.4rem var(--shadow);
+  font-family: inherit;
+  color: var(--primary-dark);
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin: 4.5rem;
+}
+
+.primary {
+  background-color: var(--primary-light);
+  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+}
+
+.primary:hover {
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+  border-color: var(--primary-light);
+}
+
+.info {
+  box-shadow: 0 0.4rem 0.4rem var(--shadow) inset,
+    0 -0.4rem 0.4rem var(--shadow) inset;
+}
+
+.info-articles {
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  width: 40rem;
+}
+
+.list {
+  background-color: var(--primary-light);
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.list-item {
+  font-size: 2.8rem;
+  font-weight: bold;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.list-item-number {
+  background-color: var(--secondary-light);
+  box-shadow: 0 0.4rem 0.4rem var(--shadow);
+  border: solid 0.2rem;
+  border-radius: 50%;
+  width: 6.4rem;
+  height: 6.4rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+form {
+  font-size: 2.4rem;
+  font-family: inherit;
+  color: inherit;
+}
+
+label {
+  font-size: 2.4rem;
+}
+
+input,
+select {
+  height: 5.6rem;
+  width: 51rem;
+  border-radius: 0.8rem;
+  border: solid 0.2rem var(--gray);
+  background-color: var(--primary-light);
+  box-shadow: 0 0.4rem 0.4rem var(--shadow);
+  padding: 0 1.6rem;
+  font-size: 2rem;
+  font-family: inherit;
+  color: inherit;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4.5rem;
+}
+
+footer {
+  background-color: var(--secondary-dark);
+  color: var(--primary-light);
+  text-align: center;
+  padding: 4.5rem;
+}
+
+.footer-info {
+  padding: 0;
+  font-size: 2.2rem;
+}
